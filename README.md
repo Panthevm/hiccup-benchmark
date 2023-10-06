@@ -1,10 +1,12 @@
 # hiccup-benchmark
 
 ## Bar
-<img width="888" alt="image" src="https://github.com/Panthevm/hiccup-benchmark/assets/43318093/fd40252d-e97e-4791-a8bd-a136a42d4b16">
+<img width="1213" alt="image" src="https://github.com/Panthevm/hiccup-benchmark/assets/43318093/f7d9ebf7-aa07-42a4-b0cf-49c1a3337ce6">
+
 
 ## Diff flamegraph
-![image](https://github.com/Panthevm/hiccup-benchmark/assets/43318093/d46f3d49-debd-4483-957f-bedb7ba3574a)
+![image](https://github.com/Panthevm/hiccup-benchmark/assets/43318093/2db71324-c6d5-489f-a48c-5abc4dc7b54b)
+
 
 > 2.0.0-RC1 - red, 
 > 2.0.0-RC2 - blue
