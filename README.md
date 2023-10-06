@@ -71,16 +71,16 @@
   <summary>GC Profile</summary>
   
 ```
-:benchmark                          :score             :score-error  :score-confidence
----------------------------------   -----------------  ------------  --------------------
-  gc.alloc.rate                     2664.204   MB/sec  45.236        2618.968   2709.440
-  gc.alloc.rate.norm                88037.890  B/op    0.041         88037.849  88037.932
-  gc.churn.G1_Eden_Space            2666.879   MB/sec  66.363        2600.515   2733.242
-  gc.churn.G1_Eden_Space.norm       88125.730  B/op    896.733       87228.996  89022.463
-  gc.churn.G1_Survivor_Space        0.025      MB/sec  0.023         0.002      0.048
-  gc.churn.G1_Survivor_Space.norm   0.824      B/op    0.759         0.064      1.583
-  gc.count                          417.000    counts                417.000    417.000
-  gc.time                           449.000    ms                    449.000    449.000
+:benchmark                          :score             :score-error  :score-confidence     
+---------------------------------   -----------------  ------------  --------------------  
+  gc.alloc.rate                     4472.722   MB/sec  94.999        4377.723   4567.721   
+  gc.alloc.rate.norm                74387.848  B/op    0.112         74387.735  74387.960  
+  gc.churn.G1_Eden_Space            4487.655   MB/sec  139.022       4348.633   4626.678   
+  gc.churn.G1_Eden_Space.norm       74635.719  B/op    1221.805      73413.914  75857.524  
+  gc.churn.G1_Survivor_Space        0.030      MB/sec  0.029         0.001      0.059      
+  gc.churn.G1_Survivor_Space.norm   0.498      B/op    0.476         0.022      0.974      
+  gc.count                          531.000    counts                531.000    531.000    
+  gc.time                           581.000    ms                    581.000    581.000    
 ```
 
 </details>
