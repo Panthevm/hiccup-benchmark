@@ -1,0 +1,24 @@
+{:paths   ["src" "resources"]
+ :deps    {org.clojure/clojure {:mvn/version "1.11.1"}}
+
+ :aliases
+ {:jmh
+  {:extra-paths ["classes"]
+   :jvm-opts    []
+   :extra-deps  {jmh-clojure/task {:mvn/version "0.1.1"}}
+   :ns-default  jmh.task
+   :exec-fn     jmh.task/run}
+
+  :repl
+  {:extra-paths ["test"]
+   :jvm-opts    ["-Djdk.attach.allowAttachSelf"]
+   :extra-deps  {cider/cider-nrepl                         {:mvn/version "0.38.1"}
+                 criterium/criterium                       {:mvn/version "0.4.6"}
+                 com.clojure-goes-fast/clj-async-profiler  {:mvn/version "1.0.5"}
+                 com.clojure-goes-fast/clj-java-decompiler {:mvn/version "0.3.4"}}}
+
+  :2.0.0-RC1
+  {:extra-deps {hiccup/hiccup {:mvn/version "2.0.0-RC1"}}}
+
+  :2.0.0-RC2
+  {:extra-deps {hiccup/hiccup {:mvn/version "2.0.0-RC2"}}}}}

@@ -1,0 +1,27 @@
+{:benchmarks
+ [{:name  :html
+   :fn    hiccup-benchmark.core/html
+   :args  [:state/variant]}]
+
+ :states
+ {:variant
+  {:fn   (partial apply hiccup-benchmark.core/build-element)
+   :args [:param/variants]}}
+
+ :params
+ {:variants
+  [[]
+   [:tag-id]
+   [:tag-class]
+   [:tag-id :tag-class]
+   [:tag-id :tag-class :attrs-id]
+   [:tag-id :tag-class :attrs-id :attrs-class]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles {:children 1}]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles {:children 10}]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles {:children 1  :depth 1}]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles {:children 1  :depth 2}]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles :children-100]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles {:depth 1}]
+   [:tag-id :tag-class :attrs-id :attrs-class :attrs-styles {:depth 10}]
+   ]}}
